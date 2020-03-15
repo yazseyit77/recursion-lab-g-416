@@ -31,11 +31,6 @@ function isPalindrome(string) {
 }
 
 
-function addUpTo(array, n) {
-    n = n || 0;
-    if (n === array.length) {
-        return 0;
-    } else {
-        return array[n] + addUpTo(array, n + 1);
-    }
+function addUpTo(array, idx) {
+  return idx ? array[idx] + addUpTo(array, --idx) : array[idx];
 }
