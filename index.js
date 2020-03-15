@@ -38,5 +38,5 @@ function addUpTo(array
 
 
 function maxOf(){
-  
+
 }
