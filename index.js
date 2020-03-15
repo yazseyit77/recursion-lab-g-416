@@ -34,3 +34,8 @@ function isPalindrome(string) {
 function addUpTo(array, idx) {
   return idx ? array[idx] + addUpTo(array, --idx) : array[idx];
 }
+
+
+function maxOf(){
+  
+}
