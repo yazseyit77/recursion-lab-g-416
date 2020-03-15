@@ -11,5 +11,5 @@ function printString(myString) {
 }
 
 function reverseString(str){
-  return str === "" ? "" : reverseString(str.substring(1)) + str.charAt(0);
+  return str.length <= 1 ? str : reverseString(str.substring(1)) + str.charAt(0);
 }
