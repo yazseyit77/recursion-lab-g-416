@@ -83,7 +83,7 @@ try {
   describe('addUpTo()', function() {
     it("sums all members up to a given index in an array", function() {
       expect(addUpTo([1, 4, 5, 3], 2)).toEqual(10);
-      expect(addUpTo([4, 3, 1, 5], 1)).toEqual(9);
+      expect(addUpTo([4, 3, 1, 5], 1)).toEqual(7);
     });
 
     it("makes the proper recursive calls", function() {
