@@ -31,6 +31,11 @@ function isPalindrome(string) {
 }
 
 
-function addUpTo(array) {
-    return (array.length === 0) ? 0 : array[0] + addUpTo(array.slice(1));
+function sum(array, n) {
+    n = n || 0;
+    if (n === array.length) {
+        return 0;
+    } else {
+        return array[n] + sum(array, n + 1);
+    }
 }
